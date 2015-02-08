@@ -1,9 +1,62 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>MrE3 JScript</title>
 		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<script type="text/javascript" src="scripts/main.js"></script>
 	</head>
+
 	<body>
+		<div id="banner">
+				<p align="center"><img src="images/MrE_Header_100px.png"></p>
+		</div>
+		<div id="navBox">
+			<nav>
+				<ul class="nav" align="center">
+					
+					<li>
+						<a id="noButton" class="my-button hvr-pulse-shrink" onclick="notButton()">Nothing Button</a>
+					</li>
+					
+				</ul>
+			</nav>
+		</div>
+		<div id="aboutContainer">
+			<div id="mainWindow">
+				<div id="spacerBox"></div>
+				<div class="twoColumnBox">
+<!-- 				<span id="noButtonPressed"> </span> -->
+					Enter Integer:   <input type="text" id="n1"> <br><br>
+					Enter operator (+ - / *): <input type="text" id="op"> <br><br>
+					Enter Integer:   <input type="text" id="n2"> <br><br>
+					<a id="mathButton" class="my-button" onclick="math()">Calculate</a><br><br>
+					<span id="mathResult"></span>
+
+					<br><br>
+
+					Enter names (Each click adds name to list):
+					<input type="text" id="name"> <br>
+					<a id="addNameButton" class="my-button" onclick="addName()">Add Name</a><br><br>
+					<a id="listNamesButton" class="my-button" onclick="listNames()">List Names</a><br><br>
+					<span id="nameListReturn"></span>
+
+
+
+ 				</div>
+				<div class="twoColumnBox">
+					
+				</div>
+			</div>
+
+
+		</div>
+		
+
+
+
+
+
+
+
 	</body>
 </html>
